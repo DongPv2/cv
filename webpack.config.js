@@ -13,7 +13,7 @@ const config = {
   output: {
     path: resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: '/',
+    publicPath: './',
     assetModuleFilename: 'images/[hash][ext]',
   },
   resolve: {
