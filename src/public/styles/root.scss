@@ -1,0 +1,41 @@
+$background: #f0f2f5;
+$white-color: #ffffff;
+$white-color-extra: #f9fafb;
+$silver-color: #ccc;
+$green-color: #0fd186;
+$red-color: #e4193e;
+$orange-color: #ee7e16;
+$yellow-color: #ffd00f;
+$blue-color: #1b74e4;
+$text-color: #182537;
+$blue-color-hover: #1b68c9;
+$text-gray: #65676b;
+$text-color-secondary: #7a8086;
+$line-color-extra: #ebeef0;
+$gray-color: #d3d5d7;
+$primary: #1876f2;
+$gray-hover: #e4e6eb69;
+
+:root {
+  --background: #{$background};
+  --blue: #{$blue-color};
+  --primary: #{$primary};
+  --blue-hover: #{$blue-color-hover};
+  --white-color: #{$white-color};
+  --white-color-extra: #{$white-color-extra};
+  --silver-color: #{$silver-color};
+  --green-color: #{$green-color};
+  --text-color: #{$text-color};
+  --text-color-gray: #{$text-gray};
+  --text-color-secondary: #{$text-color-secondary};
+  --gray-color: #{$gray-color};
+  --gray-hover: #{$gray-hover};
+  --line-color-extra: #{$line-color-extra};
+  --container-max-width: 908px;
+  --container-padding: 16px;
+  --font-family-apple: system-ui, -apple-system, BlinkMacSystemFont,
+    ".SFNSText-Regular", sans-serif;
+  --font-family-code: ui-monospace, Menlo, Consolas, Monaco, monospace;
+  --font-family-default: Helvetica, Arial, sans-serif;
+  --font-family-segoe: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,25 @@
+.detail {
+    padding: 16px 32px 32px 16px;
+    flex: auto;
+    & > * {
+      margin-bottom: 32px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .title {
+      margin-bottom: 14px;
+      margin-top: 4px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .items{
+      &>*{
+        margin-bottom: 24px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  

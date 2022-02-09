@@ -1,0 +1,44 @@
+@import "root.scss";
+* {
+  box-sizing: border-box;
+}
+html{
+  overflow-y: overlay;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-family-default);
+  font-family: var(--font-family-apple);
+  font-size: 15px;
+}
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  margin-right: auto;
+  margin-left: auto;
+}
+.text {
+  padding-top: 8px;
+  color: var(--text-color-gray);
+  font-weight: 600;
+}
+.box {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.f-17{
+  font-size: 17px;
+}
+strong{
+  color: #050505;
+  font-weight: 600;
+}
+.text-gray{
+  color: var(--text-color-gray);
+}

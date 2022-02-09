@@ -1,0 +1,40 @@
+.nav {
+  height: 60px;
+  border-top: 1px solid var(--gray-color);
+  display: flex;
+  flex-direction: row;
+  padding: 4px 0;
+  box-sizing: border-box;
+  .item {
+    padding: 0 16px;
+    font-size: 15px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background-color: var(--gray-hover);
+    }
+    user-select: none;
+  }
+  .active {
+    color: var(--primary);
+    position: relative;
+
+    &:hover {
+      background-color: unset;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 3px;
+      border-radius: 1px 1px 0 0;
+      background-color: var(--blue);
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+}
