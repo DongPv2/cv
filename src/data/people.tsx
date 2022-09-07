@@ -68,7 +68,6 @@ export const People: IPeople = {
     value: "phungdong3020@gmail.com",
     icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/9p_UfjPVxUp.png",
     icon2: "https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/9p_UfjPVxUp.png",
-
   },
   description: "Thuộc và thực hiện đầy đủ 5 điều Bác Hồ dạy",
   birthDay: {
@@ -114,6 +113,16 @@ export const People: IPeople = {
     icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/O9UvtDFKcnT.png",
     icon2: "https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/O9UvtDFKcnT.png",
   },
+  news: [
+    {
+      title: "Đang học tại Đại Học Công Nghiệp Hà Nội (HaUI)",
+      note: "Cao đẳng — Công Nghệ Thông Tin",
+      createAt: "8/27/2017",
+      date: "8/27/2017",
+      icon: "https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/id4jdGYPaIP.png",
+      type: "event",
+    },
+  ],
 };
 
 export interface IPeople {
@@ -137,7 +146,18 @@ export interface IPeople {
   universtity?: IEvent[];
   gender?: IObjectPrivate;
   lifeEvents?: ILifeEvents[];
+  news?: INew[];
 }
+interface INew {
+  type?: "share" | "event" | "new";
+  createAt?: string;
+  icon?: string;
+  date?: string;
+  title?: string;
+  note?: string;
+  hide?: boolean;
+}
+
 export interface IObjectPrivate {
   value: string;
   hide?: boolean;
