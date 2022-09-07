@@ -1,7 +1,7 @@
+const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
-const path = require('path');
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -11,9 +11,9 @@ const config = {
     index: "./src/index.tsx",
   },
   output: {
-    publicPath: '/',
-    path: path.resolve(__dirname, '../bundle'),
+    path: resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: './',
     assetModuleFilename: 'images/[hash][ext]',
   },
   resolve: {

@@ -2,7 +2,6 @@ import classNames from "classnames";
 import React, { useContext } from "react";
 import { ContextGlobal } from "../../contexts/context-global";
 import { BaseInfomation, Event } from "../baseInformation/BaseInformation";
-import News from "../news/news";
 import styles from "./article.module.scss";
 export default function Article() {
   const people = useContext(ContextGlobal).people;
@@ -62,9 +61,7 @@ export default function Article() {
             </ol>
           </ul>
         </div>
-        <div className={classNames("box", styles.right)}>
-          <News />
-        </div>
+        <div className={classNames("box", styles.right)}>2</div>
       </div>
     </div>
   );
